@@ -3,7 +3,7 @@ function eratosthenes(upperval::Integer)
     primes = Array(Int64, upperval)
     numberlist = trues(upperval)
     numberlist[1] = false
-    for index in 2:bound
+    for index in 2:upperval
         if numberlist[index] && isprime(index)
             primes[i] = index
             i += 1
